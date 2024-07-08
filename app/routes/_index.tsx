@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button, Box, Container, Paper } from "@mantine/core";
 
 export default function Index() {
-    const [selectedOption, setSelectedOption] = useState("PAIS");
+    const [selectedOption, setSelectedOption] = useState("PAÍS");
     const [containerWidth, setContainerWidth] = useState("30rem");
     const [isOpen, setIsOpen] = useState(false);
 
@@ -89,7 +89,7 @@ export default function Index() {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             alignItems: "flex-start",
-                            paddingBottom: "20px",
+                            paddingBottom: "5px",
                             borderBottom: "1px solid #ddd",
                             position: "relative",
                             color: "white",
@@ -159,10 +159,12 @@ export default function Index() {
                             justifyContent: "flex-end",
                             alignItems: "center",
                             paddingTop: "20px",
+
+
                         }}
                     >
-                        <Button onClick={handleButtonClick} color={"black"} size={"30px"}>
-                            IR
+                        <Button onClick={handleButtonClick} color={"black"} size={"30px"}  mt={20} pr={0}  >
+IR
                         </Button>
                     </Box>
                 </Paper>

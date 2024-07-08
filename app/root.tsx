@@ -25,7 +25,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <ColorSchemeScript />
         </head>
         <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider theme={{
+            fontFamily: 'Poppins, sans-serif',
+            fontFamilyMonospace: 'Monaco, Courier, monospace',
+            headings: { fontFamily: 'Poppins, sans-serif' },
+        }}>{children}</MantineProvider>
         <ScrollRestoration />
         <Scripts />
         </body>
